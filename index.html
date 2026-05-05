@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peach & Goma | Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <div id="cursor-glow"></div>
+    <header class="header">
+        <div class="logo">peach&goma.</div>
+        <nav class="nav">
+            <a href="#hero">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search menu..." />
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Experience Cute <span class="highlight">Coffee</span></h1>
+                <p>Sweet peach blends, warm caramel notes, and purrfect cozy moments.</p>
+                <a href="#menu" class="btn">Explore Menu</a>
+            </div>
+            <div class="hero-image-container" id="spline-wrapper">
+                <div class="glass-orb"></div>
+                <iframe src="https://my.spline.design/peachandgomacopy-93mShaTvKGOyhDPHARwSYeEn/" frameborder="0" width="100%" height="100%" style="border-radius: 20px; position: relative; z-index: 2; box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05); pointer-events: auto; min-height: 500px;"></iframe>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2 class="section-title fade-in">Our Menu</h2>
+            <div class="menu-grid" id="menuGrid">
+                <div class="product-card fade-in" data-name="Signature Espresso">
+                    <div class="product-img-wrapper">
+                        <img src="assets/espresso.png" alt="Signature Espresso">
+                    </div>
+                    <div class="product-info">
+                        <h3>Signature Espresso</h3>
+                        <p>Deep, rich shots of our dark ash roast.</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+                
+                <div class="product-card fade-in" data-name="Caramel Macchiato">
+                    <div class="product-img-wrapper">
+                        <img src="assets/espresso.png" alt="Caramel Macchiato">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Espresso with velvety milk and warm caramel drizzle.</p>
+                        <span class="price">$5.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Ash Croissant">
+                    <div class="product-img-wrapper">
+                        <img src="assets/pastry.png" alt="Ash Croissant">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ash Croissant</h3>
+                        <p>Flaky, buttery pastry dusted with edible charcoal ash.</p>
+                        <span class="price">$4.20</span>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in" data-name="Caramel Tart">
+                    <div class="product-img-wrapper">
+                        <img src="assets/pastry.png" alt="Caramel Tart">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caramel Tart</h3>
+                        <p>Crisp shell filled with smooth salted caramel.</p>
+                        <span class="price">$6.00</span>
+                    </div>
+                </div>
+            </div>
+            <p id="noResults" class="no-results hidden">No products found.</p>
+        </section>
+
+        <section id="about" class="about-section fade-in">
+            <div class="about-content glass-panel">
+                <h2>About peach&goma.</h2>
+                <p>Welcome to our cozy corner, where the sweet, playful energy of Peach and Goma meets the comforting embrace of artisanal coffee. We believe in crafting not just a cup of coffee, but a delightful experience. Enjoy our warm caramel notes and signature peach blends in a perfectly cute atmosphere.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 peach&goma. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
